@@ -1,6 +1,5 @@
 <html>
   <head>
-    <title>Hello</title>
     <style> 
             h1, h2, h3 { 
                 text-align:center; 
