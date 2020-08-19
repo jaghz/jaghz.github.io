@@ -21,6 +21,11 @@
 		align-items: center;
 		justify-content: center;
 		height: 30vw;
+		border-bottom-color: #F2EFE9;
+		border-bottom-style:solid;
+		border-top-color: #F2EFE9;
+		border-top-style:solid;
+		z-index:5;
 	}
 	
 	#welcome-text {
@@ -41,6 +46,22 @@
 		line-height: 1.4;
 		color: #A65D85;
 		letter-spacing: 5px;
+		padding-bottom: 10px;
+	}
+	
+	.about-text{
+		position: relative;
+		color: #F2EFE9;
+		font-family: 'Alata';
+		font-size: 15px;
+		padding: 10px;
+		letter-spacing: 3px;
+		text-align: center;
+		margin-top: 15px;
+		padding: 10px 0px 0px 2px;
+	}
+	a:hover{
+		color: #A65D85;
 	}
 	#projects-section{
 		display:inline;
@@ -49,8 +70,11 @@
 		left:0;
 		right:0;
 		height:70vw;
+		z-index:1;
 		background-color: #034873;
 		justify-content: center;
+		border-bottom-color: #F2EFE9;
+		border-bottom-style:solid;
 	}
 	#projects-heading {
 		color: #F2EFE9;
@@ -60,6 +84,7 @@
 		letter-spacing: 2.5px;
 		text-align: center;
 	}
+	
 	hr {
 		margin: 0px 25px 0px 25px;
 	}
@@ -73,6 +98,8 @@
 		height:30vw;
 		background-color: #072540;
 		justify-content: center;
+		border-bottom-color: #F2EFE9;
+		border-bottom-style:solid;
 	}
 	#contact-heading {
 		color: white;
@@ -105,8 +132,13 @@
   <br>
   <br>
   <h1 id="welcome-text">Jill Aghyourli Zalat</h1>
-  <br><h3 id="welcome-text-sub">BEng. Mechanical Engineering</h3>
+  <h3 id="welcome-text-sub">BEng. Mechanical Engineering</h3>
+  <h3 class="about-text"><a class="about-text" href="#">Download my resume</a>   
+  <h3 class="about-text"><a class="about-text" href="#">Check out my GitHub</a>
+
+
   </section>
+
   
   <section id="projects-section">
   <h1 id="projects-heading">Here are some of my projects</h1>
