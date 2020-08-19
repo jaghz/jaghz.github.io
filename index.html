@@ -2,18 +2,65 @@
 <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@700&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
+
 
 <style>
 	/* General */
 	/* ------- */
 	body {
-		background-color: #FFFFFF;
+		background-color: white;
 		height: 200vh;
+	}
+	#nav-bar{
+		display: flex;
+		position:fixed;
+		top:0;
+		left:0;
+		right:0;
+		height:4vw;
+		background-color: #041626;
+		z-index:100;
+		justify-content: center;
 		
 	}
+	#nav-ul{
+	
+		list-style-type: none;
+		z-index:98;
+		display:flex;
+		text-align: center;
+		
+		
+	}
+	.nav-list{
+		z-index:99;
+		display:inline;
+		padding: 0px 50px 0px 50px;
+		font-family: 'Alata', sans-serif;
+		font-weight:bold;
+		padding-left: 30px;
+		padding-right:30px;
+		padding-bottom:10px;
+	}
+	.a-nav{
+		position: relative;
+		color: #F2EFE9;
+		font-family: 'Alata';
+		font-size: 15px;
+		padding: 10px;
+		letter-spacing: 3px;
+		text-align: center;
+		margin-top: 15px;
+		padding: 10px 0px 0px 2px;
+		text-decoration:none;
+		
+	}
+	
+	
 	#welcome-section {
 		display: inline;
-		top: 0;
+		top: 3vw;
 		left: 0;
 		right: 0;
 		position: absolute;
@@ -21,10 +68,10 @@
 		align-items: center;
 		justify-content: center;
 		height: 30vw;
-		border-bottom-color: #F2EFE9;
+		/* border-bottom-color: #F2EFE9;
 		border-bottom-style:solid;
 		border-top-color: #F2EFE9;
-		border-top-style:solid;
+		border-top-style:solid;*/
 		z-index:5;
 	}
 	
@@ -49,7 +96,7 @@
 		padding-bottom: 10px;
 	}
 	
-	.about-text{
+	.resume-text{
 		position: relative;
 		color: #F2EFE9;
 		font-family: 'Alata';
@@ -63,36 +110,106 @@
 	a:hover{
 		color: #A65D85;
 	}
-	#projects-section{
+
+	
+	#about-section-left{
 		display:inline;
 		position:absolute;
-		top:30vw;
+		top:33vw;
+		left:0;
+		width: 50vw;
+		height:20vw;
+		background-color: #072540;
+		justify-content: center;
+	}
+	
+	#about-section-right{
+		display:inline;
+		position:absolute;
+		top:33vw;
+		right:0;
+		width: 50vw;
+		height:20vw;
+		background-color: #F2EFE9;
+		justify-content: center;
+	
+	} 
+	
+	#about-heading {
+		color: #F2EFE9;
+		font-family: 'Barlow Condensed',sans-serif;
+		position:relative;
+		font-size: 85px;
+		letter-spacing:1px;
+		text-align:center;
+		letter-spacing: 30px;
+		right: 20px;
+		top:40px;
+		
+	}
+	#about-image{
+		border-radius:500px;
+		position:absolute;
+		left: 315px;
+		top: 50px;
+		width: 12%;
+		height: auto;
+		
+	}
+	
+	#about-text{
+		position:relative;
+		text-align: center;
+		font-size: 17px;
+		font-family: 'Cantarell', sans-serif;
+		font-weight: 700;
+		line-height: 1.4;
+		color: #041626;
+		letter-spacing: 5px;
+		padding: 20px;
+	}
+	#projects-section-top{
+		display:inline;
+		position:absolute;
+		top:53vw;
 		left:0;
 		right:0;
-		height:70vw;
+		height:8vw;
 		z-index:1;
-		background-color: #034873;
+		background-color: #A65D85;
 		justify-content: center;
-		border-bottom-color: #F2EFE9;
-		border-bottom-style:solid;
 	}
 	#projects-heading {
 		color: #F2EFE9;
+		position:relative;
 		font-family: 'Alata';
-		font-size: 35px;
+		font-size: 25px;
+		margin-top: 25px;
 		padding: 0;
-		letter-spacing: 2.5px;
+		letter-spacing: 15px;
 		text-align: center;
 	}
-	
+	#projects-section-bottom{
+		display:inline;
+		position:absolute;
+		top:60vw;
+		left:0;
+		right:0;
+		height:80vw;
+		z-index:1;
+		background-color: #F2EFE9;
+		justify-content: center;
+	}
 	hr {
-		margin: 0px 25px 0px 25px;
+		margin: 0px 170px 0px 170px;
+		color: #F2EFE9;
+		
 	}
 	
 	#contact-section{
 		display:inline;
 		position:absolute;
-		top:100vw;
+		top:103vw;
 		left:0;
 		right:0;
 		height:30vw;
@@ -127,29 +244,49 @@
 <html>
 
   <body>
-  
+  <nav id="nav-bar">
+	<ul id="nav-ul">
+	<li class="nav-list"><a class="a-nav" href="#">About me</a></li>
+	<li class="nav-list"><a class="a-nav" href="#">My projects</a></li>
+	<li class="nav-list"><a class="a-nav" href="#">Contact me</a></li>
+	</ul>
+  </nav>
   <section id="welcome-section">
   <br>
   <br>
   <h1 id="welcome-text">Jill Aghyourli Zalat</h1>
   <h3 id="welcome-text-sub">BEng. Mechanical Engineering</h3>
-  <h3 class="about-text"><a class="about-text" href="#">Download my resume</a>   
-  <h3 class="about-text"><a class="about-text" href="#">Check out my GitHub</a>
-
-
+  <h3 class="resume-text"><a class="resume-text" href="#">Download my resume</a>   
+  <h3 class="resume-text"><a class="resume-text" href="#">Check out my GitHub</a>
   </section>
 
   
-  <section id="projects-section">
-  <h1 id="projects-heading">Here are some of my projects</h1>
+  <section id="about-section-left">
+  <h1 id="about-heading">ABOUT</h1>
+  <!--<img id="about-image" src="https://i.imgflip.com/y0w6k.jpg?a443400" alt="Me!">-->
+
+  </section>
+  
+  <section id="about-section-right">
+  <p id="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+  in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </section>
+ 
+ 
+  <section id="projects-section-top">
+  <h1 id="projects-heading">MY PROJECTS</h1>
   <hr>
   </section>
-  
+  <section id="projects-section-bottom">
+  </section>
+  <!--
   <section id="contact-section">
   <h1 id="contact-heading">Let's get in touch</h1>
   <hr>
   <h3 id="contact-text">Email: example@gmail.com</h3>
-  </section>
+  </section> -->
   
   
   </body>
