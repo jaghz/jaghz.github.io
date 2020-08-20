@@ -202,10 +202,34 @@
 	}
 	hr {
 		margin: 0px 170px 0px 170px;
-		color: black;
+		color: black;		
+	}
+	.container{
+		position:absolute;
+		left:20%;
+		z-index:50;
+		font-size: 40px;
+		min-height: 300px;
+		width: 60%;
+		background: #ADC5D9;
+		display: grid;
+		grid-template-columns: 350px 350px 350px;
+		grid-template-rows: 10fr;
+		grid-column-gap: 100px;
+		justify-content:center;
+		
 		
 	}
-	
+	.item{
+		background-color: #8F94A6;
+		padding-left: 10px;
+		padding-right:10px;
+		justify-content:center;
+		margin-top:25px;
+	}
+	.grid-text{
+		
+	}
 	#contact-section{
 		display:inline;
 		position:absolute;
@@ -276,13 +300,16 @@
  
  
   <section id="projects-section-top">
-  <h1 id="projects-heading">MY PROJECTS</h1>
-  
+  <h1 id="projects-heading">MY PROJECTS</h1> 
+  <div class="container">
+		<div class="item"></div>
+		<div class="item"></div>
+		<div class="item"></div>
+  </div>
   </section>
-  <!--
-  <section id="projects-section-bottom">
-  </section>-->
-  <!--
+  
+  
+ <!--
   <section id="contact-section">
   <h1 id="contact-heading">Let's get in touch</h1>
   <hr>
