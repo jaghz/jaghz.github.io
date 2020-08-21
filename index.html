@@ -4,13 +4,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
 
-
 <style>
 	/* General */
 	/* ------- */
 	body {
 		background-color: white;
-		height: 186vh;
+		height: 300vh;
 		padding: 0px;
 		margin: 0px;
 	}
@@ -20,41 +19,48 @@
 		top:0;
 		left:0;
 		right:0;
-		height:4vw;
+		height: 8%;
+		padding: 0%;
+		margin: 0px;
 		background-color: #D61849;
 		z-index:100;
 		justify-content: center;
+		flex-direction: horizontal;
+		overflow: hidden;
+		
 		
 	}
 	#nav-ul{
-	
+		top: 0;
 		list-style-type: none;
-		z-index:98;
-		display:flex;
+		display: flex;
+		flex-direction: horizontal;
+		position: absolute;
+		text-decoration: none;
 		text-align: center;
+		justify-content: center;
+		width: 100%;
 		
 		
 	}
 	.nav-list{
-		z-index:99;
-		display:inline;
-		padding: 0px 50px 0px 50px;
 		font-family: 'Alata', sans-serif;
 		font-weight:bold;
-		padding-left: 30px;
-		padding-right:30px;
-		padding-bottom:10px;
+		margin-right: 5%;
+		margin-left: 5%;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		
+		padding-bottom: 0px;
+		padding-top: 0px;
+		text-align:center;
+		text-decoration: none;
 	}
 	.a-nav{
-		position: relative;
-		color: #F3D5CB;
+		color: #F2EFE9;
 		font-family: 'Alata';
-		font-size: 15px;
-		padding: 10px;
+		font-size: 1.5em;
 		letter-spacing: 3px;
-		text-align: center;
-		margin-top: 15px;
-		padding: 10px 0px 0px 2px;
 		text-decoration:none;
 		
 	}
@@ -75,58 +81,39 @@
 		background-color:#D61849;
 		align-items: center;
 		justify-content: center;
-		padding-top: 34%;
+		height: 27%;
 		margin:0px;
 		z-index:5;
 	}
 	
 	#welcome-text {
 		text-align: center;
-		font-size: 50px;
+		font-size: 3em;
 		font-family: 'Cantarell', sans-serif;
 		font-weight: 700;
 		line-height: 1.4;
 		color: #F2EFE9;  
 		letter-spacing: 15px;
 		position: absolute;
+		overflow: auto;
 		vertical-align: center;
 		top: 30%;
 	}
 	#welcome-text-sub {
 		position: absolute;
-		font-size: 20px;
+		font-size: 1.5em;
 		font-family: 'Cantarell', sans-serif;
 		font-weight: 700;
 		line-height: 1.4;
-		overflow: auto;
 		color: #EAA14C;
 		letter-spacing: 5px;
 		text-align: center:
 		vertical-align:  center;
-		top: 65%;
+		top: 60%;
 	}
 	
-	.resume-text{
-		color: #160E0C;
-		font-family: 'Alata';
-		font-size: 25px;
-		text-decoration:none;
-		letter-spacing: 13.5px;
-		border-color: #D61849;
-		border: 2px;
-		border-style:solid;
-		text-align: center;
-		
 	
-	}
-	.resume-text-h3{
-		
-		position: absolute;
-		display: space-around;
-		border-style: solid;
-		
-		
-	}
+	
 	a:hover{
 		background-color: #EAA14C;
 	}
@@ -135,10 +122,10 @@
 	#about-section{
 		display:flex;
 		position:relative;
-		left:0;
-		right:0;
+		
 		margin: 0px;
-		padding-top:40%;
+		height:45%;
+		width: 100%;
 		background-color: #F3D5CB;
 		justify-content: center;
 		
@@ -162,7 +149,7 @@
 	}
 	
 	#about-text{
-		font-size: 17px;
+		font-size: 2.5vh;
 		font-family: 'Cantarell', sans-serif;
 		font-weight: 700;
 		line-height: 1.4;
@@ -171,40 +158,78 @@
 		
 		position:absolute;
 		display:flex;
-		top: 55%;
-		overflow: auto;
+		max-width: 75%;
+		top: 43%;
+		height: auto;
 		text-align: center;
 		margin:0px;
-		padding:0px;
 		border-style: none;
 	}
+	
+
+	.resume-text-a{
+	
+		color: #160E0C;
+		font-family: 'Alata';
+		font-size: 1.8em;
+		text-decoration:none;
+		vertical-align: center;
+		text-align: center;
+		border-color: #D61849;
+		border: .05em;
+		border-style:solid;
+		letter-spacing: 14px;
+		text-align: center;
+		
+		position: relative;
+		display: inline-flex;
+		padding: 2% 2% 2% 2%;
+		height: 7%;
+		overflow: auto;
+		top: 75%;
+		margin-right: 1em;
+		margin-bottom: 0px;
+	
+	}
 	#projects-section{
-		display:inline;
-		position:absolute;
-		top:65vw;
-		left:0;
-		right:0;
-		height:30vw;
+		display:flex;
+		position:relative;
+		top: 0vw;
+		width: 100%;
+		height:50%;
 		z-index:1;
 		background-color:#EAA14C;
 		justify-content: center;
+		vertical-align: center;
 	}
 	#projects-heading {
+	
+		display:flex;
+		position:absolute;
+		
 		color: #160E0C; <!--#F2EFE9-->
-		position:relative;
+		position:absolute;
 		font-family: 'Alata';
-		font-size: 25px;
-		margin-top: 25px;
-		padding: 0;
-		letter-spacing: 15px;
-		text-align: center;
+		font-size: 2.5vw;
+		padding: 5px;
+		margin: 0px;
+		top: 1%;
+		height:3rem;
+		letter-spacing: 1vw;
+
+		vertical-align: center;
+		
 	}
 	
 	hr {
+		position: absolute;
+	
+		top: 0%;
 		margin: 0px 170px 0px 170px;
-		background-color: #160E0C;
-		color: #160E0C;
-		border:1px;
+		background-color: black;
+		color: black;
+		border:10vw;
+		border: solid;
 	}
 	.container{
 		position:absolute;
@@ -213,6 +238,7 @@
 		font-size: 40px;
 		min-height: 300px;
 		width: 60%;
+		top: 15%;
 		background: #EAA14C;
 		display: grid;
 		grid-template-columns: 350px 350px 350px;
@@ -226,18 +252,17 @@
 	}
 	.item{
 		background-color: #D6BFB7;
-		padding-left: 10px;
-		padding-right:10px;
+		padding: 20%;
 		justify-content:center;
 		margin-top:25px;
 	}
 	
 	#contact-section{
-		display:inline;
-		position:absolute;
+		display:flex;
+		position:relative;
 		left:0;
 		right:0;
-		top:95vw;
+		top:0%;
 		height:12vw;
 		background-color: #160E0C;
 	
@@ -266,15 +291,20 @@
 			
 </style>
 <html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  </head>
   <body>
+  
   <nav id="nav-bar">
 	<ul id="nav-ul">
 	<li class="nav-list"><a class="a-nav" href="#">About me</a></li>
 	<li class="nav-list"><a class="a-nav" href="#">My projects</a></li>
-	<li class="nav-list"><a class="a-nav" href="#">Contact me</a></li>
+	<li class="nav-list"><a class="a-nav" href="#">Contact me</a></li>-
 	</ul>
-  </nav>
+  </nav> 
+ 
   <section id="welcome-section">
   <br>
   <br>
@@ -284,38 +314,38 @@
 
   
   <section id="about-section">
+  
  <img id="about-image" src="https://lh3.googleusercontent.com/TJyuYivzHjWrO1K3yHYAzMplkZll2bOeTRnLChjwtEL7zeIS4BMggMt0oSL0iz2MfTTTGCDahDKU04hA4rsRJ40SYzleCJmmQmc30Qe7VsLg7sTst4QGQo_1VW1Olh5JT--3jPbM0w=w2400?source=screenshot.guru">
   
   <!--<p id="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
   ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
   in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
   Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <!--<h3 class="resume-text-h3"  ><a class="resume-text" href="#">Download my resume</a></h3>   
-  <h3 class="resume-text-h3"><a class="resume-text" href="#">Check out my LinkedIn</a></h3>-->
- 
+ <a class="resume-text-a" href="#">Download my resume</a></h3>   
+ <a class="resume-text-a" href="#">Check out my LinkedIn</a></h3> 
+ -->
   </section>
   
 
- 
-<!--
   <section id="projects-section">
-  <h1 id="projects-heading">MY PROJECTS</h1> 
-  <hr>
+  
+  <!--<h1 id="projects-heading">MY PROJECTS</h1> 
+  
   <div class="container">
 		<div class="item"></div>
 		<div class="item"></div>
 		<div class="item"></div>
-  </div>
+  </div>-->
   </section> 
   
   
 
   <section id="contact-section">
-  <h1 id="contact-heading">Let's get in touch</h1>
+  <!--<h1 id="contact-heading">Let's get in touch</h1>
 
-  <h3 id="contact-text">Email: example@gmail.com</h3>
+  <h3 id="contact-text">Email: example@gmail.com</h3>-->
   </section> 
   
-  -->
+  
   </body>
 </html>
