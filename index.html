@@ -11,6 +11,8 @@
 	body {
 		background-color: white;
 		height: 186vh;
+		padding: 0px;
+		margin: 0px;
 	}
 	#nav-bar{
 		display: flex;
@@ -63,19 +65,19 @@
 	
 	
 	#welcome-section {
-		display: inline;
-		top: 3vw;
+		display: flex;
+		flex-direction:column;
+		position: relative;
 		left: 0;
 		right: 0;
-		position: absolute;
+		
+		top: 3vw;
 		background-color:#D61849;
 		align-items: center;
 		justify-content: center;
 		height: 27vw;
-		/* border-bottom-color: #F2EFE9;
-		border-bottom-style:solid;
-		border-top-color: #F2EFE9;
-		border-top-style:solid;*/
+		padding: 0;
+		margin:0;
 		z-index:5;
 	}
 	
@@ -85,12 +87,12 @@
 		font-family: 'Cantarell', sans-serif;
 		font-weight: 700;
 		line-height: 1.4;
-		padding: 30px;
 		color: #F2EFE9;  
 		letter-spacing: 15px;
+		position: absolute;
 	}
 	#welcome-text-sub {
-		position: relative;
+		position: absolute;
 		text-align: center;
 		font-size: 20px;
 		font-family: 'Cantarell', sans-serif;
@@ -98,7 +100,7 @@
 		line-height: 1.4;
 		color: #EAA14C;
 		letter-spacing: 5px;
-		top: 2vw;
+		top: 19vw;
 	}
 	
 	.resume-text{
@@ -111,16 +113,16 @@
 		border: 2px;
 		border-style:solid;
 		text-align: center;
-		padding: 15px;
-		margin-right:35px;
+		
+	
 	}
 	.resume-text-h3{
 		
-		display: initial;
-		position: relative;
-		left: 14vw;
-		top: 29vw; <!--330px-->
-		display: inline;
+		position: absolute;
+		display: space-around;
+		border-style: solid;
+		
+		
 	}
 	a:hover{
 		background-color: #EAA14C;
@@ -128,7 +130,7 @@
 
 	
 	#about-section{
-		display:inline;
+		display:flex;
 		position:absolute;
 		top:30vw;
 		left:0;
@@ -136,33 +138,10 @@
 		height:35vw;
 		background-color: #F3D5CB;
 		justify-content: center;
+
 	}
-	
-	#about-section-right{
-		display:inline;
-		position:absolute;
-		top:33vw;
-		right:0;
-		width: 50vw;
-		height:20vw;
-		background-color: #F2EFE9;
-		justify-content: center;
-	
-	} 
-	
-	#about-heading {
-		color: #160E0C;
-		font-family: 'Barlow Condensed',sans-serif;
-		position:relative;
-		font-size: 55px;
-		letter-spacing:1px;
-		text-align:center;
-		letter-spacing: 30px;
-		right: 500px;
-		top:15px;
-		margin-top:0px;
-		
-	}
+
+
 	#about-image{
 		border-radius: 600px;
 		position:absolute;
@@ -172,6 +151,7 @@
 		height: auto;
 		border-style: solid;
 		border-color: #160E0C;
+		display:flex;
 		
 	}
 	
@@ -184,6 +164,7 @@
 		letter-spacing: 5px;
 		
 		position:absolute;
+		display:flex;
 		width: 60vw;
 		vertical-align: center;
 		left: 20vw;
@@ -297,21 +278,21 @@
   <h3 id="welcome-text-sub">BEng. Mechanical Engineering</h3>
   </section>
 
-  
+  <!--
   <section id="about-section">
-  <!--<h1 id="about-heading">ABOUT</h1>-->
   <img id="about-image" src="https://lh3.googleusercontent.com/nTdRPmH8jWENpwWZ9Q6rzus-OUDD-6TaUmP1Lj1p0FxBkboz1mhcO3daFyMhqnWldFnQ8egs4BYcHLMfUBy_ofo0_SVY45OzAgfJvuzWS4NP9_QLZs-P4-LqlfE8GsztXQpbf6cSsCi82kzRFaOPplTh440L0eMGfY7jkyFFa5tE6q4CYcwH0kohnmYB-Ch0CLcE9ZhQu5ZXc2KdK7O3UU5Gpk_-hchRDPmDDJ7D2ZH-vll09AWBYPJ-DXTQ_nH-rJVvPjU-m9qWBsc1uBfx9TyAuOjLeEMpne_5oh9cFyg5p44KKzhceBffAkhxGQGKVAUd-v1jsCXkpVM44QUHTKefkWB-0AExNmrm153OcafN1tiYwSr2Gi8AooDXUTZBoYS3fExClyaPVZZjRCCdyw8yGrDNkRdDB-AL_dhp91na9-skj6ruMT-LlSiQ6lt2mzIidfpSLceN-dCQ1acWQw5ICF5slyW1cE0qOK9_Q0Fnna-mBKgaGhZj2KD7BUEYX75oUlRTr7Gk6LNFxff60EHClcVMrluNox9PTU10s7oKJ-bLmXXIie6gEom2faH2AvIc0yS-7q45qpCJgWU805de7izvB5hC5AV1gJk7-K4zI-C0ot47H0NXdpAmax_mp54b-yiV4DdriQ8mlCzQhFtQKhWVqTJIUtWnZcnrWe6tdBCHzmBK1o5EoJNV=s320-no?authuser=0">
-  <h3 class="resume-text-h3"  ><a class="resume-text" href="#">Download my resume</a></h3>   
-  <h3 class="resume-text-h3"><a class="resume-text" href="#">Check out my LinkedIn</a></h3>
- <p id="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+  <p id="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
   ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
   in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
   Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <h3 class="resume-text-h3"  ><a class="resume-text" href="#">Download my resume</a></h3>   
+  <h3 class="resume-text-h3"><a class="resume-text" href="#">Check out my LinkedIn</a></h3>-->
+ 
   </section>
   
 
  
-
+<!--
   <section id="projects-section">
   <h1 id="projects-heading">MY PROJECTS</h1> 
   <hr>
@@ -330,6 +311,6 @@
   <h3 id="contact-text">Email: example@gmail.com</h3>
   </section> 
   
-  
+  -->
   </body>
 </html>
