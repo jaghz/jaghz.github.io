@@ -17,13 +17,37 @@
 		font-size: 58%;
 		}
 	}
+
 	@media (max-width: 28.75em) {
 		html{
-		font-size: 55%;
+			font-size: 55%;
 		
 		}
 	}
+	/* ----------- iPad Pro 10.5" ----------- */
+
+	/* Portrait and Landscape */
+	@media only screen 
+	  and (min-device-width: 834px) 
+	  and (max-device-width: 1112px)
+	  and (-webkit-min-device-pixel-ratio: 2) {
+	  html{
+			font-size:20px;
+		}
+	}
 	
+	@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+		html {
+			font-size:12px;
+		}
+		.welcome-text-sub{
+		top: 10vw;
+		}
+}
 	body {
 		background-color: white;
 		height: 300vh;
