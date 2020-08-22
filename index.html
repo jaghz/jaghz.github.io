@@ -113,6 +113,17 @@
 			text-align: center;
 		}
 	}
+	@media screen and (max-width: 411px){
+		#welcome-section{
+			width: 100%;
+			height: 20em;
+			margin: 0px;
+			padding-right: 32px;
+	
+			top: 3%;
+			text-align: center;
+		}
+	}
 	
 	#welcome-text {
 		text-align: center;
@@ -143,6 +154,22 @@
 		top: 2%;
 		}
 	}
+	@media screen and (max-width: 411px){
+		#welcome-text{
+			text-align: center;
+		font-size: 2em;
+		font-family: 'Cantarell', sans-serif;
+		font-weight: 700;
+		line-height: 1.4;
+		color: #F2EFE9;  
+		letter-spacing: 15px;
+		position: absolute;
+		overflow: auto;
+		vertical-align: center;
+		top: 2%;
+		left: 5%;
+		}
+	}
 	
 	#welcome-text-sub {
 		position: absolute;
@@ -171,6 +198,21 @@
 		margin-left: 0em;
 	}
 	}
+	@media screen and (max-width: 411px){
+		#welcome-text-sub{
+			position: absolute;
+		font-size: 1.1em;
+		font-family: 'Cantarell', sans-serif;
+		font-weight: 700;
+		line-height: 1.2;
+		color: #EAA14C;
+		letter-spacing: 5px;
+		width: 50%;
+		top: 50%;
+		margin-left: 0em;
+		left: 27%;
+		}
+	}
 	
 	
 	
@@ -191,7 +233,10 @@
 		
 	}
 	@media (max-width:480px){
-	#about-section{
+	
+	}
+	@media screen and (max-width: 411px){
+		#about-section{
 		display:flex;
 		position:relative;
 		flex-direction: column;
@@ -204,8 +249,10 @@
 		vertical-align: center;
 		text-align: center;
 		align-items: center;
+		padding-right: 33px;
 		}
 	}
+	
 
 
 	#about-image{
@@ -230,6 +277,24 @@
 		margin: 0px;
 		padding: 0px;
 		top: 10%;
+		
+		width: 38%;
+		height: auto;
+		vertical-align: center;
+		border-style: solid;
+		border-color: #160E0C;
+		align-items: center;
+		text-align: center;
+		}
+	}
+	@media (max-width:411px){
+	#about-image{
+		border-radius: 600px;
+		position:absolute;
+		margin: 0px;
+		padding: 0px;
+		top: 10%;
+		left: 30%;
 		
 		width: 38%;
 		height: auto;
@@ -276,6 +341,26 @@
 		text-align: center;
 		margin:0px;
 		border-style: none;
+		}
+	}
+	@media (max-width:411px){
+	#about-text{
+		font-size: 2vh;
+		font-family: 'Cantarell', sans-serif;
+		font-weight: 700;
+		line-height: 1.4;
+		color: #041626;
+		letter-spacing: 5px;
+		top: 33%;
+		margin-top: 5%;
+		position:absolute;
+		display:flex;
+		min-width: 80%;
+		height: auto;
+		text-align: center;
+		margin:0px;
+		border-style: none;
+		left: 10%;
 		}
 	}
 	
@@ -328,7 +413,32 @@
 		
 		}
 	}
+	@media (max-width:480px){
+	.resume-text-a{
+		color: #160E0C;
+		font-family: 'Alata';
+		font-size: 1.2em;
+		text-decoration:none;
+		left: 5%;
+		
+		border-color: #D61849;
+		border: .05em;
+		border-style:solid;
+		letter-spacing: 14px;
+		vertical-align: center;
+		width: 75%;
+		height: 2em;
+		display: block;
 	
+		height: 7%;
+		overflow: auto;
+		margin-bottom: 10px;
+		padding: 0px;
+		top: 40%;
+		bottom: 0;
+		
+		}
+	}
 	#projects-section{
 		display:flex;
 		position:relative;
@@ -347,6 +457,20 @@
 		position:relative;
 		top: 0vw;
 		width: 100%;
+		height:35%;
+		z-index:1;
+		background-color:#EAA14C;
+		justify-content: center;
+		vertical-align: center;
+		}
+	}
+	@media (max-width:480px){
+	#projects-section{
+		display:flex;
+		position:relative;
+		top: 0vw;
+		width: 100%;
+		padding-right: 33px;
 		height:35%;
 		z-index:1;
 		background-color:#EAA14C;
@@ -472,6 +596,22 @@
 		flex-direction: column;
 		}
 	}
+	@media (max-width:480px){
+	#contact-section{
+		display:flex;
+		position:relative;
+		left:0;
+		right:0;
+		top:0%;
+		padding-right: 33px;
+		width:100%;
+		height:20%;
+		background-color: #160E0C;
+		vertical-align: center;
+		text-align: center;
+		flex-direction: column;
+		}
+	}
 	#contact-heading {
 		position: absolute;
 		color: white;
@@ -522,6 +662,19 @@
 		left: 5%;
 		}
 	}
+	@media (max-width:480px){
+	#contact-text{
+		position: absolute;
+		color: white;
+		font-family: 'Alata';
+		font-size: 15px;
+		padding: 0;
+		letter-spacing: 10px;
+		text-align: center;
+		top: 35%;
+		left: 5%;
+		}
+	}
 	
 	
 	
@@ -555,9 +708,7 @@
  <img id="about-image" src="https://lh3.googleusercontent.com/TJyuYivzHjWrO1K3yHYAzMplkZll2bOeTRnLChjwtEL7zeIS4BMggMt0oSL0iz2MfTTTGCDahDKU04hA4rsRJ40SYzleCJmmQmc30Qe7VsLg7sTst4QGQo_1VW1Olh5JT--3jPbM0w=w2400?source=screenshot.guru">
   
   <p id="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-  in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
  <a class="resume-text-a" href="#">Download my resume</a></h3>   
  <a class="resume-text-a" href="#">Check out my LinkedIn</a></h3> 
  
