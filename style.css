@@ -124,13 +124,14 @@ footer{
   }
 @media (max-width: 768px) {
   .intro-caption {
-	top: 30%;
+	position: absolute;
+	top: 10%;
 	width:100%;
-	transform: translateY(-50%);
+	transform: translateY(-120%);
 }
 .intro-caption h1{
 	color: white;
-	font-size:350%;
+	font-size:100%;
 }
 .intro-caption h3{
 	font-size: 140%;
@@ -145,6 +146,10 @@ footer{
 }
 .display-4{
 	font-size:200%;
+}
+#about-image{
+		height: 30%;
+		width:auto;
 }
 
 .social a{
