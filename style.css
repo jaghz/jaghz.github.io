@@ -160,14 +160,23 @@ footer{
 }
 @media (max-width: 576px) {
     .intro-caption {
-	top: 40%;
+	position: absolute;
+	top: 13%;
+	width:100%;
+	transform: translateY(-10%);
+}
+#about-image{
+	height: 20%;
+	width: auto;
 }
 .intro-caption h1{
 	color: white;
-	font-size:250%;
+	font-size:100%;
+	margin-bottom: -1px;
 }
 .intro-caption h3{
-	font-size: 110%;
+	font-size: 90%;
+	margin-bottom: -1px;
 }
 .intro-caption .btn{
 	font-size: 90%;
@@ -230,11 +239,3 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
-
-
-
-
-
-
-
-
