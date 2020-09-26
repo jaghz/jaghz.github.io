@@ -5,6 +5,7 @@ html, body {
 	width: 100%;
 	font-family: 'Poppins',sans-serif;
 	color: #222;
+	scroll-behavior: smooth;
 }
 
 .navbar {
@@ -75,8 +76,14 @@ html, body {
 	}
 	
 /** Engineering Projects **/
+#eng-projects{
+	max-width:100%;
+}
 .eng-hr{
 	width: 80%;
+}
+.eng-row{
+	max-width:100%;
 }
 .image-eng{
 	position: relative;
@@ -110,8 +117,10 @@ html, body {
 }
 .project-grid{
 	
-	padding: 20px;
-	margin-left: 5rem;
+	padding-top: 20px;
+	padding-bottom:20px;
+	margin-left:5rem;
+	margin-right:1rem;
 	margin-bottom: 5rem;
 	width:100%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
@@ -308,11 +317,4 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
-
-
-
-
-
-
-
 
