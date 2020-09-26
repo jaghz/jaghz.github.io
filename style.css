@@ -26,9 +26,9 @@ html, body {
 
 .intro-caption {
 	position: absolute;
-	top: 50%;
+	top: 35%;
 	width:100%;
-	transform: translateY(-50%);
+	transform: translateY(-70%);
 }
 .intro-caption h1{
 	color: white;
@@ -109,8 +109,8 @@ html, body {
 	-ms-transform: translate(-50%, -50%);
 }
 .project-grid{
-	padding-bottom: 20px;
-	padding-top: 20px;
+	
+	padding: 20px;
 	margin-left: 5rem;
 	margin-bottom: 5rem;
 	width:100%;
@@ -183,20 +183,25 @@ footer{
 @media (max-width: 768px) {
   .intro-caption {
 	position: absolute;
-	top: 10%;
+	top: 17%;
 	width:100%;
-	transform: translateY(-120%);
+	transform: translateY(-10%);
 }
 .intro-caption h1{
 	color: white;
-	font-size:110%;
+	font-size:175%;
+	margin-bottom: -1rem;
 }
 .intro-caption h3{
-	font-size: 140%;
+	font-size: 100%;
 	font-weight: 400;
 	color: white;
 
 	padding-bottom: .2rem%;
+}
+.intro-inner img{
+	width: 100%;
+	height: 100%;
 }
 .intro-caption .btn{
 	font-size: 95%;
@@ -216,10 +221,7 @@ footer{
 		
 	}
 }
-#movia-pic{
-	width: 100px;
-	height:100px;
-}
+
 @media (max-width: 576px) {
     .intro-caption {
 	position: absolute;
@@ -306,6 +308,11 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
+
+
+
+
+
 
 
 
