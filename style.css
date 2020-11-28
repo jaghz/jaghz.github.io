@@ -145,6 +145,13 @@ html, body {
 .fa-cube {
 	color: #e54d26;
 }
+.fa-python{
+	font-size:4em;
+}
+.code-btn{
+	padding-left: 1rem;
+	margin-left: 1rem;
+}
 .fa-code{
 	color: #563d7c;
 }
@@ -170,6 +177,12 @@ html, body {
 }
 .fa-linkedin{
 	color: white;
+}
+.fa-envelope{
+	color: white;
+}
+.fa-envelope:hover{
+	color: #563d7d;
 }
 .fa-linkedin:hover{
 	color: #0e76a8;
@@ -317,4 +330,11 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
+
+
+
+
+
+
+
 
