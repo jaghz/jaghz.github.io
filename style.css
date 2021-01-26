@@ -1,55 +1,83 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@font-face {
+    font-family: 'Playlist Script';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Playlist Script'), url('Playlist Script.woff') format('woff');
+    }
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+	
 
 html, body {
 	height: 100%;
 	width: 100%;
 	font-family: 'Poppins',sans-serif;
 	color: #222;
+	background-color: #F0EAF1;
 	scroll-behavior: smooth;
 }
 
 .navbar {
 	padding: .8rem;
+	background-color: #391449;
+	
 }
 
 .navbar-nav li {
 	padding-right: 20px;
+	
 }
 
 .nav-link{
 	font-size: 1.1em !important;
+	color: white !important;
+}
+.nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: grey !important;
 }
 
 .intro-inner img{
 	width: 100%;
 	height: 100%;
+	
+}
+.intro-inner {
+	background-color: #391449;
+	padding-bottom: 4rem;
 }
 
 .intro-caption {
 	position: absolute;
 	top: 35%;
 	width:100%;
-	transform: translateY(-70%);
+	transform: translateY(-20%);
+	left: -19%
 }
 .intro-caption h1{
 	color: white;
-	font-size:450%;
-	text-shadow: 1px 1px 15px #000;
+	font-size:600%;
+	font-family: 'Playlist Script', sans-serif;
 }
 .intro-caption h3{
-	font-size: 200%;
-	font-weight: 500;
+	font-size: 180%;
+	font-weight: 400;
 	color: white;
-	text-shadow: 1px 1px 10px #000;
 	padding-bottom: 1%;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: .4rem;
 }
 .btn-primary{
-	background-color: #6648b1;
-	border: 1px solid #6648b1;
+	background-color: #232444;
+	float:right;
+	height: 5rem;
+	width: 25rem;
+	font-size: 200%;
+	font-family: 'Raleway', sans-serif;
 }
 .btn-primary: hover{
 	background-color: #563d7d;
-	border: 1px solid #563d7c;
+	border: 5% solid white;
 }
 
 .padding {
@@ -67,25 +95,54 @@ html, body {
 	margin-bottom: 1rem;
 }
 #about-image{
+		float: left;
+		border:1.5rem solid #96899D;
+		border-radius: 500px;
 		
-		border-radius: 100%;
-		padding-bottom: 2rem;
-		height: 50%;
-		width:auto;
 	
 	}
+.about-text {
+	font-family: 'Raleway', sans-serif;
+	font-size: 240%;
+	float: left;
+	letter-spacing: .4rem;
+	width: 105%;
+	padding-bottom: 1rem;
+	transform: translateX(10%);
+	border-bottom: .15rem solid #391449;
+
+}
+.lead {
+		transform: translateX(10%);
+		
+
+}
+
 	
 /** Engineering Projects **/
 #eng-projects{
 	max-width:100%;
 }
+.eng-title{
+	font-family: 'Raleway';
+	letter-spacing: .5rem;
+	font-size: 250%;
+}
 .eng-hr{
 	width: 80%;
+	border: solid .1rem;
+}
+.eng-subtitle {
+	font-size:140%;
 }
 .eng-row{
 	max-width:100%;
 }
 .image-eng{
+	position: relative;
+	padding:1rem;
+}
+.image-eng-2{
 	position: relative;
 	padding:1rem;
 }
@@ -118,7 +175,7 @@ html, body {
 .project-grid{
 	
 	padding-top: 20px;
-	padding-bottom:20px;
+	padding-bottom:0px;
 	margin-left:5rem;
 	margin-right:1rem;
 	margin-bottom: 5rem;
@@ -134,10 +191,16 @@ html, body {
 	border-radius: 0;
 	border: 0px solid #434444;
 	width: 100%;
-	padding: 3px;
+	padding: 0px;
 	margin-top: 20px;
 }
-
+.coding-subtitle{
+	font-size:140%;
+	float:center;
+	margin-left: 20%;
+	margin-right: 20%;
+	
+}
 /***************************************/
 .lead{
 	padding-top: 1rem;
