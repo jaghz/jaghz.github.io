@@ -1,9 +1,11 @@
-
 <!DOCTYPE html>
 <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@700&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
+<link rel="preload" as="font" href="Playlist Script.woff" type="font/woff2" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
 
 <html>
   <head>
@@ -21,7 +23,7 @@
   <body>
   <!-- Navigation Bar -->
   <!--------------------->
-  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <nav class="navbar navbar-expand-md navbar-light sticky-top">
   <div class="container-fluid">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 		<span class="navbar-toggler-icon"></span>
@@ -31,13 +33,13 @@
 			<ul class="navbar-nav ml-auto">
 
 				<li class="nav-item">
-					<a class="nav-link" href="#about">About Me</a>
+					<a class="nav-link" href="#about">ABOUT</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#eng-projects">Experience</a>
+					<a class="nav-link" href="#eng-projects">EXPERIENCE</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#end">Connect</a>
+					<a class="nav-link" href="#end">CONNECT</a>
 				</li>
 			</ul>
 		</div>
@@ -47,25 +49,32 @@
   <!--------------------->
   <div class="intro-inner text-center">
 				<div class=" intro-bg active">
-					<img src="https://lh3.googleusercontent.com/sYkoeNdin77UHQIG3M7K9iZVPuUReo4Vaw6T8QZprJcA46rW3YyIU0dTiF-QfOu4GHvUZYfl8CUQi7teif0t1BQf651be8goS4r-e9cuvEtLVQKFRfMXovgU03kClT_Rixdg8vOiMg=w2400">
+					<img src="https://lh3.googleusercontent.com/QKpwttuoU_cUS4qBaa-nZPc823qjlffEwVieIMgeOuZrYgqXxJD8c6xFRQsFSPb9ZUhVBGR7Fa2NuxfVtrKvwJ1KKkUudeGtf-bLByIeIHiLZmhTf_Bq8-49RlVTWruxs-3wWlahsg=w2400">
 					<div class="intro-caption">
 						<h1 class="display-2">Jill Aghyourli Zalat</h1>
 						<br>
-						<h3>BEng. Mechanical Engineering</h3>
+						<h3 class="display-2">BENG. MECHANICAL ENGINEERING</h3>
 						<br>
+						<button type="button" class="btn btn-primary btn-lg btn-dark">DOWNLOAD RESUME</button></a>
 			
 					</div>
 				</div>
 		</div>
   </div>
   <div id="about" class="container-fluid padding">
-  <div class="row welcome text-center">
+  <div class="row welcome">
 		
-		<div class="col-12">
-			 <img id="about-image" src="https://lh3.googleusercontent.com/TJyuYivzHjWrO1K3yHYAzMplkZll2bOeTRnLChjwtEL7zeIS4BMggMt0oSL0iz2MfTTTGCDahDKU04hA4rsRJ40SYzleCJmmQmc30Qe7VsLg7sTst4QGQo_1VW1Olh5JT--3jPbM0w=w2400?source=screenshot.guru">
-			<p class="lead">Hi, I'm Jill! I am passionate about applications in software development and autonomous systems, including machine learning, game development, and embdedded systems design.</p>
-			<br>
-			<a href="https://docs.google.com/document/d/1YYqI6y1jRZN9dO0vfYF5QxH3QTGXd1vm_I38bdV-bu0/edit?usp=sharing" target="_blank"><button type="button" class="btn btn-primary btn-lg btn-dark">View My Resume</button></a>
+		<div class="col-4">
+			 <img id="about-image" src="https://lh3.googleusercontent.com/9S30XVwFRVFa_Sjw95Q3WJN9_WkPnQyNuRBgHSWEqqtaEv0CMZHMf40r8_0jt6oTSiSkdl4_ka1_QvQfTIcxOpiS5zwXKHaWZ2eNE0JyA8hu6NHaNK9XRoNEfhWpb18DFhIV1uElAQ=s312-p-k">
+		</div>
+		<div class ="col-7">
+			 <h3 class="about-text display-4">HI, I'M JILL!</h3>
+			<p class="lead">Thanks for stopping by!</p> 
+			<p class="lead">I'm an aspiring mechanical engineer and a lifelong learner. My specialization is in mechatronics, but I have a wide range of experiences in different fields including rocket propulsion, hardware engineering, software development and more. </p> 
+			<p class="lead">Take a look at some of my work below!</p> 
+			<!--<p class="lead">Hi, I'm Jill! I am passionate about applications in software development and autonomous systems, including machine learning, game development, and embdedded systems design.</p>-->
+			
+		</div>	
 		</div>
 		
   </div>
@@ -76,8 +85,10 @@
   <div class="eng-row row padding text-center">
   
 	<div class="col-12">
-	<h1 class="display-4">Engineering Experience</h1>
+	<h1 class="display-4 eng-title">ENGINEERING EXPERIENCE</h1>
 	<hr class="eng-hr">
+	<p class="eng-subtitle">Some of my internship, extracurricular, and academic projects</p>
+
 	</div>
 	
 	<div class="row">
@@ -95,7 +106,7 @@
 				<br>
 				<br>
 				<br>
-				<p class="text-center eng-desc">At Movia, I help build and maintain GPS production systems central to the performance of their mobile billboard systems used in advertising campaigns across North America.</p>
+				<p class="text-center eng-desc">At Movia, I helped build and maintain GPS production systems central to the performance of their mobile billboard systems used in advertising campaigns across North America.</p>
 			</div>
 		</div>
 		<!---Project 2--->
@@ -135,7 +146,7 @@
 		
 		<div class="col-md-3 project-grid">
 			<div class="image-eng">
-				<img src="images/hockeyhelmet.PNG" class="w-100">
+				<img src="images/hockeyhelmet.png" class="w-100">
 				<div class="overlay">
 					<div class="detail">
 					<p>Design of a Hockey Helmet Impact Tester</p>
@@ -187,8 +198,6 @@
 		
 	</div>
   </div>
-  
-  
   
   
   <!--- Coding and Software Projects -->
