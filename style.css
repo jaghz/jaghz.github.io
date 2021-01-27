@@ -233,10 +233,11 @@ html, body {
 	padding:3rem;
 }
 .fa-github{
-	color: white;
+	color: black;
+	font-size: 7rem;
 }
 .fa-github:hover{
-	color:black;
+	color:white;
 }
 .fa-linkedin{
 	color: white;
