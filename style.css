@@ -99,7 +99,9 @@ html, body {
 		border:1.5rem solid #96899D;
 		border-radius: 500px;
 		
-	
+	}
+.about-pic{
+	padding-bottom:0px;
 	}
 .about-text {
 	font-family: 'Raleway', sans-serif;
@@ -281,6 +283,16 @@ footer{
 	width:100%;
 	transform: translateY(-10%);
 }
+.btn-primary{
+	background-color: #232444;
+	height: 3.5rem;
+	width: 13rem;
+	font-size: 100%;
+	transform: translateY(-50%);
+	transform: translateX(-45%);
+
+	font-family: 'Raleway', sans-serif;
+}
 .intro-caption h1{
 	color: white;
 	font-size:175%;
@@ -324,26 +336,44 @@ footer{
 	transform: translateY(-10%);
 }
 #about-image{
-	height: 20%;
+	height: 60%;
 	width: auto;
+	display: inline-block;
+	padding-bottom:0px;
+	transform: translateX(-15%);
 }
+.about-pic{
+	padding-bottom:0px;
+		display: inline-block;
+		
 
+}
 .exp-img-2{
 	max-width: 5% !important;
 }
+.intro-caption{
+	float: center;
+	transform: translateX(12%);
 
+}
 .intro-caption h1{
 	color: white;
-	font-size:130%;
-	margin-bottom: -2px;
+	font-size:150%;	
+	
 }
 .intro-caption h3{
-	font-size: 90%;
+	font-size: 50%;
 	margin-bottom: -1px;
 }
-.intro-caption .btn{
-	font-size: 90%;
-	padding: 4px 8px;
+.btn-primary{
+	background-color: #232444;
+	height: 3.5rem;
+	width: 13rem;
+	font-size: 100%;
+	transform: translateY(-25%);
+	transform: translateX(-45%);
+
+	font-family: 'Raleway', sans-serif;
 }
 }
 
