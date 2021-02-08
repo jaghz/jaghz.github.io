@@ -7,13 +7,14 @@
     }
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 	
-
+/* INTRO + ABOUT */
+/*=====================================================================*/
 html, body {
 	height: 100%;
 	width: 100%;
 	font-family: 'Poppins',sans-serif;
 	color: #222;
-	background-color: #F0EAF1;
+	background-color: #F8F9F9;
 	scroll-behavior: smooth;
 }
 
@@ -94,6 +95,10 @@ html, body {
 	margin-top: .3rem;
 	margin-bottom: 1rem;
 }
+
+#about {
+	background-color: #F0EAF1
+}
 #about-image{
 		float: left;
 		border:1.5rem solid #96899D;
@@ -120,11 +125,26 @@ html, body {
 
 }
 
+/** Experience Section **/
+/**======================================================**/
+#experience-photos {
+	display: flex; 
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.experience-desc{
+	color: #434444;
+	line-height: 205%;
+	font-size: 1.15rem;
+}
 	
 /** Engineering Projects **/
 #eng-projects{
 	max-width:100%;
 }
+
+
 .eng-title{
 	font-family: 'Raleway';
 	letter-spacing: .5rem;
@@ -156,12 +176,13 @@ html, body {
 	padding:1rem;
 }
 .overlay{
+	
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	left: 0;
+	left: 2;
 	right: 0;
-	height: 100%;
+	height: 105%;
 	width: 100%;
 	opacity: 0;
 	transition: .5s ease;
@@ -169,8 +190,21 @@ html, body {
 	border-color: black;
 	border:1px;
 }
-.image-eng:hover .overlay{
+
+.experience-grid img:hover{
+	
+	opacity: 0;
+	transition: .5s ease;
+	/*background-color: rgba(67, 68, 68, 0.7);*/
+	border-color: black;
+	border:1px;
+}
+
+.experience-grid:hover .overlay{
+	
 	opacity: 1;
+	
+
 }
 .detail{
 	color: #fff;
@@ -211,14 +245,12 @@ html, body {
 	
 }
 /***************************************/
+
+
 .lead{
 	padding-top: 1rem;
 }
-.fa-cube {
-	color: #e54d26;
-}
-.fa-python{
-	font-size:4em;
+
 }
 .code-btn{
 	padding-left: 1rem;
@@ -262,7 +294,7 @@ html, body {
 }
 
 footer{
-	background-color: #3f3f3f;
+	background-color: black;
 	color: white;
 	padding-top: 2rem;
 
