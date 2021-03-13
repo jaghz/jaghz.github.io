@@ -301,12 +301,104 @@ footer{
 }
 
 /*---Media Queries --*/
-@media (max-width: 992px) {
+@media (min-width: 992px) {
 	.social a{
 		font-size: 4em;
-		padding: 2rem;
+		padding: 2rem;	
+	}
+	
+	.intro-caption {
+	position: absolute;
+	top: 35%;
+	width:100%;
+	transform: translateY(-20%);
+	left: -17%
+}
+.intro-caption h1{
+	color: white;
+	font-size:560%;
+	font-family: 'Playlist Script', sans-serif;
+}
+.intro-caption h3{
+	font-size: 180%;
+	font-weight: 400;
+	color: white;
+	padding-bottom: 1%;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: .4rem;
+}
+#about-image{
+		float: left;
+		border:1.5rem solid #96899D;
+		border-radius: 500px;
+		left: -25%;
 		
 	}
+	
+.lead {
+		transform: translateX(25%); !important
+}
+.about-text{
+	font-family: 'Raleway', sans-serif;
+    font-size: 240%;
+    float: left;
+    letter-spacing: .4rem;
+    width: 105%;
+    padding-bottom: 1rem;
+    transform: translateX(23%);
+    border-bottom: .15rem solid #391449;
+}
+  }
+  @media (max-width: 992px) {
+	.social a{
+		font-size: 4em;
+		padding: 2rem;	
+	}
+	
+	.intro-caption {
+	position: absolute;
+	top: 25%;
+	width:100%;
+	transform: translateY(-20%);
+	left: -15%
+}
+.intro-caption h1{
+	color: white;
+	font-size:475%;
+	font-family: 'Playlist Script', sans-serif;
+}
+.intro-caption h3{
+	font-size: 150%;
+	font-weight: 400;
+	color: white;
+	padding-bottom: 1%;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: .4rem;
+}
+.btn-primary{
+	background-color: #232444;
+	height: 3.5rem;
+	width: 13rem;
+	font-size: 95%;
+	transform: translateY(-50%);
+	transform: translateX(-45%);
+
+	font-family: 'Raleway', sans-serif;
+}
+.lead {
+		transform: translateX(25%); !important
+}
+.about-text{
+	font-family: 'Raleway', sans-serif;
+    font-size: 240%;
+    float: left;
+    letter-spacing: .4rem;
+    width: 105%;
+    padding-bottom: 1rem;
+    transform: translateX(23%);
+    border-bottom: .15rem solid #391449;
+}
+	
   }
 @media (max-width: 768px) {
   .intro-caption {
@@ -314,6 +406,7 @@ footer{
 	top: 17%;
 	width:100%;
 	transform: translateY(-10%);
+	left: -15%;
 }
 .btn-primary{
 	background-color: #232444;
@@ -348,16 +441,29 @@ footer{
 .display-4{
 	font-size:200%;
 }
-#about-image{
-		height: 30%;
-		width:auto;
-}
+.about-pic{
+	padding-bottom:0px;
+	}
 
 .social a{
 		font-size: 2.5em;
 		padding: 1.2rem;
 		
 	}
+	.lead {
+		transform: translateX(25%); 
+}
+.about-text{
+	font-family: 'Raleway', sans-serif;
+    font-size: 240%;
+    float: left;
+    letter-spacing: .4rem;
+    width: 105%;
+    padding-bottom: 1rem;
+    transform: translateX(23%);
+    border-bottom: .15rem solid #391449;
+}
+	
 }
 
 @media (max-width: 576px) {
