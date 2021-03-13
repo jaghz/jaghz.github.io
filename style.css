@@ -400,7 +400,7 @@ footer{
 }
 	
   }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .intro-caption {
 	position: absolute;
 	top: 17%;
@@ -443,6 +443,7 @@ footer{
 }
 .about-pic{
 	padding-bottom:0px;
+
 	}
 
 .social a{
@@ -451,8 +452,9 @@ footer{
 		
 	}
 	.lead {
-		transform: translateX(25%); 
+		transform: translateX(30%); 
 }
+
 .about-text{
 	font-family: 'Raleway', sans-serif;
     font-size: 240%;
@@ -460,7 +462,7 @@ footer{
     letter-spacing: .4rem;
     width: 105%;
     padding-bottom: 1rem;
-    transform: translateX(23%);
+    transform: translateX(30%);
     border-bottom: .15rem solid #391449;
 }
 	
@@ -570,11 +572,3 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
-
-
-
-
-
-
-
-
