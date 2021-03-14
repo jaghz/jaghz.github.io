@@ -301,129 +301,37 @@ footer{
 }
 
 /*---Media Queries --*/
-@media (min-width: 992px) {
+@media (max-width: 992px) {
 	.social a{
 		font-size: 4em;
-		padding: 2rem;	
-	}
-	
-	.intro-caption {
-	position: absolute;
-	top: 35%;
-	width:100%;
-	transform: translateY(-20%);
-	left: -17%
-}
-.intro-caption h1{
-	color: white;
-	font-size:560%;
-	font-family: 'Playlist Script', sans-serif;
-}
-.intro-caption h3{
-	font-size: 180%;
-	font-weight: 400;
-	color: white;
-	padding-bottom: 1%;
-	font-family: 'Raleway', sans-serif;
-	letter-spacing: .4rem;
-}
-#about-image{
-		float: left;
-		border:1.5rem solid #96899D;
-		border-radius: 500px;
-		left: -25%;
+		padding: 2rem;
 		
 	}
-	
-.lead {
-		transform: translateX(25%); !important
-}
-.about-text{
-	font-family: 'Raleway', sans-serif;
-    font-size: 240%;
-    float: left;
-    letter-spacing: .4rem;
-    width: 105%;
-    padding-bottom: 1rem;
-    transform: translateX(23%);
-    border-bottom: .15rem solid #391449;
-}
   }
-  @media (max-width: 992px) {
-	.social a{
-		font-size: 4em;
-		padding: 2rem;	
-	}
-	
-	.intro-caption {
-	position: absolute;
-	top: 25%;
-	width:100%;
-	transform: translateY(-20%);
-	left: -15%
-}
-.intro-caption h1{
-	color: white;
-	font-size:475%;
-	font-family: 'Playlist Script', sans-serif;
-}
-.intro-caption h3{
-	font-size: 150%;
-	font-weight: 400;
-	color: white;
-	padding-bottom: 1%;
-	font-family: 'Raleway', sans-serif;
-	letter-spacing: .4rem;
-}
-.btn-primary{
-	background-color: #232444;
-	height: 3.5rem;
-	width: 13rem;
-	font-size: 95%;
-	transform: translateY(-50%);
-	transform: translateX(-45%);
-
-	font-family: 'Raleway', sans-serif;
-}
-.lead {
-		transform: translateX(25%); !important
-}
-.about-text{
-	font-family: 'Raleway', sans-serif;
-    font-size: 240%;
-    float: left;
-    letter-spacing: .4rem;
-    width: 105%;
-    padding-bottom: 1rem;
-    transform: translateX(23%);
-    border-bottom: .15rem solid #391449;
-}
-	
-  }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .intro-caption {
 	position: absolute;
 	top: 17%;
 	width:100%;
 	transform: translateY(-10%);
-	left: -15%;
 }
 .btn-primary{
 	background-color: #232444;
 	height: 3.5rem;
-	width: 22rem;
-	font-size: 175%;
-	transform: translateY(-40%);
+	width: 13rem;
+	font-size: 100%;
+	transform: translateY(-50%);
 	transform: translateX(-45%);
 
 	font-family: 'Raleway', sans-serif;
 }
 .intro-caption h1{
 	color: white;
-	font-size:550%;
+	font-size:175%;
+	margin-bottom: -1rem;
 }
 .intro-caption h3{
-	font-size: 200%;
+	font-size: 100%;
 	font-weight: 400;
 	color: white;
 
@@ -433,35 +341,23 @@ footer{
 	width: 100%;
 	height: 100%;
 }
-
+.intro-caption .btn{
+	font-size: 95%;
+	padding: 8px 14px;
+}
 .display-4{
 	font-size:200%;
 }
-.about-pic{
-	padding-bottom:0px;
-
-	}
+#about-image{
+		height: 30%;
+		width:auto;
+}
 
 .social a{
 		font-size: 2.5em;
 		padding: 1.2rem;
 		
 	}
-	.lead {
-		transform: translateX(30%); 
-}
-
-.about-text{
-	font-family: 'Raleway', sans-serif;
-    font-size: 240%;
-    float: left;
-    letter-spacing: .4rem;
-    width: 105%;
-    padding-bottom: 1rem;
-    transform: translateX(30%);
-    border-bottom: .15rem solid #391449;
-}
-	
 }
 
 @media (max-width: 576px) {
@@ -491,20 +387,6 @@ footer{
 	float: center;
 	transform: translateX(12%);
 
-}
-.lead {
-		transform: translateX(30%); 
-}
-
-.about-text{
-	font-family: 'Raleway', sans-serif;
-    font-size: 240%;
-    float: left;
-    letter-spacing: .4rem;
-    width: 105%;
-    padding-bottom: 1rem;
-    transform: translateX(30%);
-    border-bottom: .15rem solid #391449;
 }
 .intro-caption h1{
 	color: white;
@@ -569,24 +451,12 @@ figure {
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
-
 Small (sm) devices (landscape phones, 576px and up)
 @media (min-width: 576px) { ... }
-
 Medium (md) devices (tablets, 768px and up)
 @media (min-width: 768px) { ... }
-
 Large (lg) devices (desktops, 992px and up)
 @media (min-width: 992px) { ... }
-
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
-
-
-
-
-
-
-
-
