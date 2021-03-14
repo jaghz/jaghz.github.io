@@ -301,7 +301,58 @@ footer{
 }
 
 /*---Media Queries --*/
-@media (max-width: 992px) {
+@media (max-width: 768px) { 
+	.intro-caption {
+	position: absolute;
+	top: 17%;
+	width:100%;
+	transform: translateY(-10%);
+}
+
+	.intro-caption h1 {
+    color: white;
+    font-size: 350%;
+    font-family: 'Playlist Script', sans-serif;
+}
+ .intro-caption h3{
+	font-size: 100%;
+	font-weight: 400;
+	color: white;
+	padding-bottom: .2rem%;
+}
+.btn-primary{
+	background-color: #232444;
+	height: 3.5rem;
+	width: 13rem;
+	font-size: 100%;
+	transform: translateY(-50%);
+	transform: translateX(-5%);
+
+	font-family: 'Raleway', sans-serif;
+}
+
+.lead{
+	transform: translateX(45%);
+}
+.about-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 240%;
+    float: left;
+    letter-spacing: .4rem;
+    width: 105%;
+    padding-bottom: 1rem;
+    transform: translateX(40%);
+    border-bottom: .15rem solid #391449;
+}
+#about-image {
+    float: left;
+    border: 1.5rem solid #96899D;
+    border-radius: 500px;
+	transform: translateX(-20%);
+}
+}
+
+/*@media (max-width: 992px) {
 	.social a{
 		font-size: 4em;
 		padding: 2rem;
@@ -408,7 +459,7 @@ footer{
 	font-family: 'Raleway', sans-serif;
 }
 }
-
+*/ 
 
 /*--- Fixed Background Image --*/
 figure {
@@ -445,7 +496,10 @@ figure {
 }
 
 
-
+@media (max-width: 1200px) {
+	.intro-caption{
+		transform: translateY(-70%);
+}
 
 
 /*
