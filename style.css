@@ -498,7 +498,7 @@ figure {
 
 @media (max-width: 1200px) {
 	.intro-caption{
-		transform: translateY(-70%);
+		transform: translateY(-60%);
 }
 
 
