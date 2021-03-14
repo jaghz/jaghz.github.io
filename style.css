@@ -499,9 +499,22 @@ figure {
 @media (max-width: 1200px) {
 	.intro-caption{
 		transform: translateY(-60%);
+		transform: translateX(5%);
 }
-
-
+.lead{
+	transform: translateX(45%);
+}
+.about-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 240%;
+    float: left;
+    letter-spacing: .4rem;
+    width: 105%;
+    padding-bottom: 1rem;
+    transform: translateX(40%);
+    border-bottom: .15rem solid #391449;
+}
+}
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
